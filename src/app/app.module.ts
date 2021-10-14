@@ -6,10 +6,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CartaoComponent } from './componentes/cartao/cartao.component';
 
 @NgModule({
-  declarations: [AppComponent, CartaoComponent],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

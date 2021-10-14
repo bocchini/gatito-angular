@@ -4,14 +4,18 @@
     <div *ngIf="user$ | async as user">
       <div *ngIf="user.name; else login">
         <i class="fa fa-user-circle mr-1"></i>
-        <a class="mr-1">{{ user.name }}></a>
-        <a (click)="logout()">Logout</a>
+        <a class="mr-1">{{ user.name }} </a>
+        <a (click)="logout()"
+          ><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a
+        >
       </div>
     </div>
   </nav>
   <ng-template #login>
     <span class="navbar-text">
-      <a [routerLink]="['']">Login</a>
+      <a [routerLink]="['']"
+        ><i class="fa fa-sign-in" aria-hidden="true"></i>Login</a
+      >
     </span>
   </ng-template>
 </header>
