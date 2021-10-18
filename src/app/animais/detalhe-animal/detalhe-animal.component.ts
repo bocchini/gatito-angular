@@ -1,6 +1,7 @@
-import { AnimaisService } from './../animais.service';
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
+
+import { AnimaisService } from './../animais.service';
 import { Animal } from '../animais';
 import { ActivatedRoute, Router } from '@angular/router';
 
